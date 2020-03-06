@@ -1,0 +1,6 @@
+C:\Users\Nickolas\Documents\GitHub\ENSE496-Assignment4\ENSE496-A4\ENSE496-A4\bin\Debug\ENSE496-A4.exe.config
+C:\Users\Nickolas\Documents\GitHub\ENSE496-Assignment4\ENSE496-A4\ENSE496-A4\bin\Debug\ENSE496-A4.exe
+C:\Users\Nickolas\Documents\GitHub\ENSE496-Assignment4\ENSE496-A4\ENSE496-A4\bin\Debug\ENSE496-A4.pdb
+C:\Users\Nickolas\Documents\GitHub\ENSE496-Assignment4\ENSE496-A4\ENSE496-A4\obj\Debug\ENSE496-A4.csprojAssemblyReference.cache
+C:\Users\Nickolas\Documents\GitHub\ENSE496-Assignment4\ENSE496-A4\ENSE496-A4\obj\Debug\ENSE496-A4.exe
+C:\Users\Nickolas\Documents\GitHub\ENSE496-Assignment4\ENSE496-A4\ENSE496-A4\obj\Debug\ENSE496-A4.pdb
