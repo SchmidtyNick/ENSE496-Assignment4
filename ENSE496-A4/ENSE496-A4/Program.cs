@@ -30,6 +30,21 @@ namespace ENSE496_A4
                 }
             }
         }
+        //Compares the bytes of 2 files
+        public bool FileEquals(String fPath1, String fPath2)
+        {
+            byte[] file1 = File.ReadAllBytes(fPath1); //File 1
+            byte[] file2 = File.ReadAllBytes(fPath2); //File 2
+            for(int i=0; i<file1.Length; i++) //Assuming files are equal sizes
+            {
+                if(file1[i] != file2[i])
+                {
+                    return false;
+                }
+ 
+            }
+            return true;
+        }
     }
 
 }
