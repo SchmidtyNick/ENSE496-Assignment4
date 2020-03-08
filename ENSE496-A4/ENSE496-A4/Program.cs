@@ -13,6 +13,9 @@ namespace ENSE496_A4
         {
             Program p = new Program();
             p.RandomGenerator();
+            bool FileCompare = FileEquals("C:/Users/Nickolas/Documents/GitHub/ENSE496-Assignment4/ENSE496-A4/ENSE496-A4/OutputA.txt",
+                "C:/Users/Nickolas/Documents/GitHub/ENSE496-Assignment4/ENSE496-A4/ENSE496-A4/OutputANic.txt");
+            Console.WriteLine(FileCompare);
         }
 
 
@@ -31,7 +34,7 @@ namespace ENSE496_A4
             }
         }
         //Compares the bytes of 2 files
-        public bool FileEquals(String fPath1, String fPath2)
+        static bool FileEquals(String fPath1, String fPath2)
         {
             byte[] file1 = File.ReadAllBytes(fPath1); //File 1
             byte[] file2 = File.ReadAllBytes(fPath2); //File 2
