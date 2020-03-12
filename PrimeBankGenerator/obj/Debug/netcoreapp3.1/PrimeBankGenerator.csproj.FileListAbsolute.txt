@@ -1,0 +1,11 @@
+E:\Documents\GitHub\ENSE496-Assignment4\PrimeBankGenerator\bin\Debug\netcoreapp3.1\PrimeBankGenerator.exe
+E:\Documents\GitHub\ENSE496-Assignment4\PrimeBankGenerator\bin\Debug\netcoreapp3.1\PrimeBankGenerator.deps.json
+E:\Documents\GitHub\ENSE496-Assignment4\PrimeBankGenerator\bin\Debug\netcoreapp3.1\PrimeBankGenerator.runtimeconfig.json
+E:\Documents\GitHub\ENSE496-Assignment4\PrimeBankGenerator\bin\Debug\netcoreapp3.1\PrimeBankGenerator.runtimeconfig.dev.json
+E:\Documents\GitHub\ENSE496-Assignment4\PrimeBankGenerator\bin\Debug\netcoreapp3.1\PrimeBankGenerator.dll
+E:\Documents\GitHub\ENSE496-Assignment4\PrimeBankGenerator\bin\Debug\netcoreapp3.1\PrimeBankGenerator.pdb
+E:\Documents\GitHub\ENSE496-Assignment4\PrimeBankGenerator\obj\Debug\netcoreapp3.1\PrimeBankGenerator.csprojAssemblyReference.cache
+E:\Documents\GitHub\ENSE496-Assignment4\PrimeBankGenerator\obj\Debug\netcoreapp3.1\PrimeBankGenerator.AssemblyInfoInputs.cache
+E:\Documents\GitHub\ENSE496-Assignment4\PrimeBankGenerator\obj\Debug\netcoreapp3.1\PrimeBankGenerator.AssemblyInfo.cs
+E:\Documents\GitHub\ENSE496-Assignment4\PrimeBankGenerator\obj\Debug\netcoreapp3.1\PrimeBankGenerator.dll
+E:\Documents\GitHub\ENSE496-Assignment4\PrimeBankGenerator\obj\Debug\netcoreapp3.1\PrimeBankGenerator.pdb
