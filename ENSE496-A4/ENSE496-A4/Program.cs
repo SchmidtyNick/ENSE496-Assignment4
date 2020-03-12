@@ -50,6 +50,21 @@ namespace ENSE496_A4
             }
             return true;
         }
+        public void DHAlgoroith()
+        {
+            long P, g, a, b;
+            double x, y, ka, kb;
+            P = 17; //Prime number P
+            g = 5; //Primative root for p
+            a = 2; //private key of alice
+            b = 4;// private key of Bob
+
+            x = (Math.Pow(g, a)) % P; //Bobs generated key
+            y = (Math.Pow(g, b) % P); //Alice's generated key
+
+            ka = (Math.Pow(y, a) % P); // Secret key for Alive
+            kb = (Math.Pow(x, b) % P); //Seccret key for Bob
+        }
     }
 
 }
