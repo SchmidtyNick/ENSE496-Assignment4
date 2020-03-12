@@ -30,7 +30,7 @@ namespace ENSE496_A4
             { 
                 for (var i = 0; i < 500; i++)
                 {
-                    int num = random.Next(-100000, 100000);  //Range of a signed 16-bit int
+                    int num = random.Next(0, 100000);  //Range of a signed 16-bit int
                     sw.WriteLine(num + ",");
                 }
             }
@@ -56,14 +56,29 @@ namespace ENSE496_A4
             double x, y, ka, kb;
             P = 17; //Prime number P
             g = 5; //Primative root for p
-            a = 2; //private key of alice
-            b = 4;// private key of Bob
+            a = 599; //private key of alice (Achter in ASCII)
+            b = 389;// private key of Bob (Nick in ASCII)
 
             x = (Math.Pow(g, a)) % P; //Bobs generated key
             y = (Math.Pow(g, b) % P); //Alice's generated key
 
             ka = (Math.Pow(y, a) % P); // Secret key for Alive
             kb = (Math.Pow(x, b) % P); //Seccret key for Bob
+        }
+
+        public ulong PowerFunct(ulong a, ulong b, ulong P)
+        {
+            BigInteger temp = 0;
+            ulong i;
+            if (a == b)
+                return a;
+            else
+                for (i = 0; i < b; i++)
+                { 
+                temp += a * a;
+                }
+                return (temp % P);
+                
         }
     }
 
