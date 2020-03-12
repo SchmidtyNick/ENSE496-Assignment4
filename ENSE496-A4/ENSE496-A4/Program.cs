@@ -17,13 +17,13 @@ namespace ENSE496_A4
             bool FileCompare = FileEquals("C:/Users/Nickolas/Documents/GitHub/ENSE496-Assignment4/ENSE496-A4/ENSE496-A4/OutputA.txt",
                 "C:/Users/Nickolas/Documents/GitHub/ENSE496-Assignment4/ENSE496-A4/ENSE496-A4/OutputANic.txt");
             Console.WriteLine(FileCompare);
-            BigInteger sharedKey = new BigInteger(696969696969);
+           
+
         }
 
 
         public void RandomGenerator()
         {
-           // Random rand = new Random(sharedKey); //Random number generator with seed 42069
             Random random = new Random(42069);
             StreamWriter sw = new StreamWriter("C:/Users/Nickolas/Documents/GitHub/ENSE496-Assignment4/ENSE496-A4/ENSE496-A4/OutputA.txt");
             using (sw)
