@@ -68,7 +68,7 @@ namespace ENSE496_A4
 
         public ulong PowerFunct(ulong a, ulong b, ulong P)
         {
-            BigInteger temp = 0;
+            ulong temp = 0;
             ulong i;
             if (a == b)
                 return a;
