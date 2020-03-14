@@ -10,15 +10,16 @@ namespace ENSE496_A4
 {
     class Program
     {
+        public int seed = 0;
         static void Main(string[] args)
         {
             Program p = new Program();
-            p.RandomGenerator();
-            bool FileCompare = FileEquals("C:/Users/Nickolas/Documents/GitHub/ENSE496-Assignment4/ENSE496-A4/ENSE496-A4/OutputA.txt",
-                "C:/Users/Nickolas/Documents/GitHub/ENSE496-Assignment4/ENSE496-A4/ENSE496-A4/OutputANic.txt");
-            Console.WriteLine(FileCompare);
-           
-
+           // p.RandomGenerator();
+            //bool FileCompare = FileEquals("C:/Users/Nickolas/Documents/GitHub/ENSE496-Assignment4/ENSE496-A4/ENSE496-A4/OutputA.txt",
+              //  "C:/Users/Nickolas/Documents/GitHub/ENSE496-Assignment4/ENSE496-A4/ENSE496-A4/OutputANic.txt");
+            //Console.WriteLine(FileCompare);
+          //  p.DHAlgoroith();
+            p.PowerFunct(5, 238, 13);
         }
 
 
@@ -30,7 +31,7 @@ namespace ENSE496_A4
             { 
                 for (var i = 0; i < 500; i++)
                 {
-                    int num = random.Next(0, 100000);  //Range of a signed 16-bit int
+                    int num = random.Next(0, 100000);  
                     sw.WriteLine(num + ",");
                 }
             }
@@ -52,35 +53,36 @@ namespace ENSE496_A4
         }
         public void DHAlgoroith()
         {
-            long P, g, a, b;
-            double x, y, ka, kb;
-            P = 17; //Prime number P
-            g = 5; //Primative root for p
+            BigInteger P, g, a, b, x, y, sa, sb;
+            P = 1000000007; //Prime number P=1'000'000'000'007
+            g = 2; //Primative root for p
             a = 599; //private key of alice (Achter in ASCII)
             b = 389;// private key of Bob (Nick in ASCII)
-
-            x = (Math.Pow(g, a)) % P; //Bobs generated key
-            y = (Math.Pow(g, b) % P); //Alice's generated key
-
-            ka = (Math.Pow(y, a) % P); // Secret key for Alive
-            kb = (Math.Pow(x, b) % P); //Seccret key for Bob
+            x = PowerFunct(g, a, P); //Bobs generated key
+            y = PowerFunct(g, b, P); //Alice's generated key
+            sa = PowerFunct(y, a, P); // Secret key for Alive
+            sb = PowerFunct(x, b, P); //Secret key for Bob    
+            Console.Write(" The Secret Key for Alice is ", sa);
+            Console.WriteLine(sa);
+            Console.Write(" The Secret Key for Bob is ", sb);
+            Console.WriteLine(sb);
         }
 
-        public ulong PowerFunct(ulong a, ulong b, ulong P)
+        public BigInteger PowerFunct(BigInteger a, BigInteger b, BigInteger P)
         {
-            ulong temp = 0;
-            ulong i;
-            if (a == b)
+            BigInteger temp = 1; //Begin with a temp variable set to 1
+            if (b == 1) //Base case of b=1
                 return a;
             else
-                for (i = 0; i < b; i++)
+                for (int i = 1; i <= b; i++) //iterate through 'b' number of times
                 { 
-                temp += a * a;
+                temp *= a; //Power function
                 }
-                return (temp % P);
+            Console.Write(temp);
+                return (temp % P); //Modular function
                 
         }
-    }
+    } 
 
 }
 
