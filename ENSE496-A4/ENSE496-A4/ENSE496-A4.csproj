@@ -51,7 +51,9 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="OutputA.txt" />
+    <Content Include="..\..\..\..\..\Desktop\OutputA.txt">
+      <Link>OutputA.txt</Link>
+    </Content>
     <Content Include="OutputANic.txt" />
     <Content Include="OutputBob.txt" />
   </ItemGroup>
