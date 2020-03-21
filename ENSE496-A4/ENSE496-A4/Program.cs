@@ -10,22 +10,27 @@ namespace ENSE496_A4
 {
     class Program
     {
+      
         static void Main(string[] args)
         {
             Program p = new Program();
+            int seed = 802797117;
+            Console.Write(" The value of the seed is: ");
+            Console.WriteLine(seed);
             p.RandomGenerator();
-            bool FileCompare = FileEquals("C:/Users/Nickolas/Documents/GitHub/ENSE496-Assignment4/ENSE496-A4/ENSE496-A4/OutputA.txt",
-                "C:/Users/Nickolas/Documents/GitHub/ENSE496-Assignment4/ENSE496-A4/ENSE496-A4/OutputANic.txt");
+            Console.WriteLine("Creating File OutputAlice.txt");
+            Console.Write("The two files, OutputAlice and OutputBob are equal: ");
+          bool FileCompare = FileEquals("C:/Users/Nickolas/Documents/GitHub/ENSE496-Assignment4/ENSE496-A4/ENSE496-A4/OutputAlice.txt",
+             "C:/Users/Nickolas/Documents/GitHub/ENSE496-Assignment4/ENSE496-A4/ENSE496-A4/OutputBob.txt");
             Console.WriteLine(FileCompare);
-           
-
         }
 
 
         public void RandomGenerator()
         {
-            Random random = new Random(42069);
-            StreamWriter sw = new StreamWriter("C:/Users/Nickolas/Documents/GitHub/ENSE496-Assignment4/ENSE496-A4/ENSE496-A4/OutputA.txt");
+            int seed = 802797117;
+            Random random = new Random(seed);
+            StreamWriter sw = new StreamWriter("C:/Users/Nickolas/Documents/GitHub/ENSE496-Assignment4/ENSE496-A4/ENSE496-A4/OutputAlice.txt");
             using (sw)
             { 
                 for (var i = 0; i < 500; i++)
@@ -46,7 +51,6 @@ namespace ENSE496_A4
                 {
                     return false;
                 }
- 
             }
             return true;
         }
