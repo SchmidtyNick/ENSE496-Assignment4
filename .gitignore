@@ -8,3 +8,16 @@ ENSE496-A4/ENSE496-A4/obj/Debug/ENSE496-A4.pdb
 ENSE496-A4/ENSE496-A4/obj/Debug/ENSE496-A4.csprojAssemblyReference.cache
 ENSE496-A4/ENSE496-A4/bin/Debug/ENSE496-A4.pdb
 ENSE496-A4/.vs/ENSE496-A4/v16/.suo
+*.pdb
+*.dll
+*.cache
+ENSE496-A4/.vs/ENSE496-A4/v16/.suo
+*.ide
+*.pdb
+*.dll
+*.ide-shm
+*.ide-wal
+*.ide
+*.json
+*.targets
+*.props
