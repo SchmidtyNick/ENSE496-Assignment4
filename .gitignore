@@ -21,3 +21,6 @@ ENSE496-A4/.vs/ENSE496-A4/v16/.suo
 *.json
 *.targets
 *.props
+Mp3FrameShuffler/.vs/Mp3FrameShuffler/DesignTimeBuild/.dtbcache
+Mp3FrameShuffler/.vs/Mp3FrameShuffler/v16/.suo
+Mp3FrameShuffler/mp3.mp3
