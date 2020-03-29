@@ -20,9 +20,9 @@ namespace ENSE496_A4
 
         public void primeGenerator()
         {
-            BigInteger p = 13771193; //starting prime
+            BigInteger p = 2147483629; //starting prime
             int i = 1;  //prime counter
-            StreamWriter sw = new StreamWriter("E:/Documents/GitHub/ENSE496-Assignment4/PrimeBankCont.txt");  //prime bank file path
+            StreamWriter sw = new StreamWriter("E:/Documents/GitHub/ENSE496-Assignment4/PrimeBankNew4.txt");  //prime bank file path
             Stopwatch stopwatch = new Stopwatch();  //timer
             long dur = 0;   //timer duration
 
@@ -35,12 +35,12 @@ namespace ENSE496_A4
                     //increment p and check if it is prime
                     while (!isPrime(p))
                         p++;
-                    sw.Write(p + ",");  //output prime
                     
                     stopwatch.Stop();       //stop timer
                     dur = stopwatch.ElapsedMilliseconds;
                     stopwatch.Reset();
 
+                    sw.WriteLine(p + "," + dur);  //output prime
                     Console.WriteLine("Prime " + i + ": " + p + " Time: " + dur + "ms");
                     Console.WriteLine("");
 
